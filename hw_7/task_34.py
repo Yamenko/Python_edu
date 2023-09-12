@@ -15,9 +15,9 @@ a = 'пара-ра-рам рам-пам-папам па-ра-па-да'
 b = 'пара-па-пам пара-пам'
 
 def check_ritm(my_s):
-    new_set = set(map(lambda x: x.count('а'), my_s.split()))
-    #print(new_set)
-    if len(new_set) == 1:
+    new_set = set(map(lambda x: x.count('а'), my_s.split()))  # Потому что в сет только уникальные значения! если всегда 4 ( только 1)
+    print(new_set)
+    if len(new_set) == 1:      
         print('Парам пам-пам')
     else:
         print('Пам парам')

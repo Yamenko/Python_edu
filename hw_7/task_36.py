@@ -23,5 +23,6 @@ def print_operation_table(operation, num_rows=6, num_columns=6):
         for j in range(1, num_columns + 1):
             my_l.append(operation(i ,j))
         print (*my_l)
+        #print(*[f"{my_l:>3}"])
 
-print_operation_table(lambda x, y: x * y)
+print_operation_table(lambda x, y: x * y) 
